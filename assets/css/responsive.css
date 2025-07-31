@@ -1,0 +1,107 @@
+/* MOBILE (até 900px) */
+@media (max-width: 900px) {
+  #btnToggle {
+    display: block;
+  }
+
+  header {
+    height: 140px;
+  }
+
+  .header-title {
+    text-align: center;
+    width: 100%;
+    position: relative;
+    right: 10%;
+    top: 30%;
+  }
+
+  .header-title h1 {
+    font-size: 1.5rem;
+  }
+
+  .header-title p {
+    display: none;
+  }
+  .logo img {
+    width: 50px;
+    position: absolute;
+    right: 4px;
+  }
+
+  .footer-content {
+    height: 160px;
+  }
+
+  nav.sidebar {
+    position: fixed;
+    top: 0;
+    left: -260px;
+    width: 260px;
+    height: 100vh;
+    background-color: #333333;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: left 0.3s ease;
+    z-index: 1050;
+    overflow-y: auto;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+  }
+  nav.sidebar a {
+    color: #ce2b2b;
+  }
+
+  nav.sidebar.show {
+    left: 0;
+  }
+
+  .content {
+    padding: 0 10px;
+    min-height: calc(100vh - 290px);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .anchors {
+    order: -1;
+    border-left: none;
+    border-bottom: solid 1px #cdcdcd;
+    padding: 10px;
+  }
+
+  .anchors.collapsible {
+    display: none;
+    border-top: solid 1px #cdcdcd;
+    padding: 10px;
+  }
+
+  .anchors.collapsible.show {
+    display: block;
+  }
+
+  table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+  }
+}
+
+/* Para telas maiores mantém o layout fixo */
+@media (min-width: 901px) {
+  nav.sidebar {
+    position: static;
+    height: auto;
+    width: auto;
+    background-color: transparent;
+    color: inherit;
+    padding: initial;
+    max-width: 260px;
+  }
+  #toggleAnchorsBtn {
+    display: none;
+  }
+}
