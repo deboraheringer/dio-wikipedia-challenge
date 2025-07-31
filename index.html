@@ -1,44 +1,98 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Principal</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Explore mitologias do mundo: Grega, Nórdica e Egípcia. Deuses, heróis e lendas reunidos em um só lugar."
+    />
+    <title>Mitologias do Mundo - Página Inicial</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+  </head>
+  <body>
+    <header id="topo">
+      <button
+        id="btnToggle"
+        aria-controls="menuSidebar"
+        aria-expanded="false"
+        aria-label="Abrir menu"
+      >
+        ☰
+      </button>
+      <div class="logo">
+        <a href="index.html" aria-label="Voltar para a página inicial"
+          ><img src="assets/images/logo.png" alt="Logotipo da Wiki Mitologias"
+        /></a>
+      </div>
 
-    <div>   
-        <div class="logo">
-            <img src="assets/images/logo.png" width="200"/>
-        </div>
-    </div>
-
+      <div class="header-title">
+        <h1>Mitologias do Mundo</h1>
+        <p>
+          Uma Mini Wikipédia sobre mitologias antigas, lendas e seres fantásticos do mundo inteiro.
+        </p>
+      </div>
+    </header>
     <div class="bar"></div>
 
     <div class="content">
-        <div class="sidebar">
-            <h2>Título</h2>
-            <ul>
-                <li><a href="#">Links</a></li>
-            </ul>
-        </div>
+      <nav id="menuSidebar" class="sidebar" aria-label="Menu principal">
+        <h2>Menu Principal</h2>
+        <ul>
+          <li><a href="./index.html" aria-current="page">Página Principal</a></li>
+          <li><a href="./pages/mitologia-grega.html">Mitologia Grega</a></li>
+          <li><a href="./pages/mitologia-nordica.html">Mitologia Nórdica</a></li>
+          <li><a href="./pages/mitologia-egipcia.html">Mitologia Egípcia</a></li>
+        </ul>
+      </nav>
 
-        <div class="main">
-            
-        </div>
+      <main>
+        <section>
+          <h2>Bem-vindo(a) à Mini Wikipédia de Mitologias!</h2>
+          <p>
+            Aqui você vai conhecer as histórias fascinantes, os deuses, criaturas e mitos que
+            moldaram culturas ao redor do mundo. De heróis gregos passando por deuses nórdicos e
+            lendas egípcias — explore e aprenda com essas narrativas incríveis.
+          </p>
+          <p>
+            Clique em uma das mitologias no menu ao lado para começar sua jornada pelo universo dos
+            mitos!
+          </p>
+        </section>
 
-        <div class="anchors">
-            <h2>Neste Artigo</h2>
-            <ul>
-                <li><a href="#">Âncoras</a></li>
-            </ul>
-        </div>
+        <section>
+          <h2>Destaques</h2>
+          <ul>
+            <li><b>Mitologia Grega:</b> Os poderosos deuses do Olimpo e seus heróis lendários.</li>
+            <li><b>Mitologia Nórdica:</b> As sagas dos deuses e a profecia do Ragnarok.</li>
+            <li><b>Mitologia Egípcia:</b> O mistério dos faraós e o mundo dos mortos.</li>
+          </ul>
+        </section>
+      </main>
     </div>
-
-    <div class="footer">
-
-    </div>
-</body>
+    <footer>
+      <div class="footer-content">
+        <p>
+          Página criada para fins educativos, com base em fontes históricas e culturais das
+          mitologias.
+        </p>
+        <p>
+          Desenvolvido por Débora Heringer |
+          <a
+            href="https://github.com/deboraheringer"
+            target="_blank"
+            rel="noopener"
+            aria-label="Perfil no GitHub de Débora Heringer"
+            >GitHub</a
+          >
+          |
+        </p>
+        <p><a href="#topo" aria-label="Voltar ao topo da página">Voltar ao topo ↑</a></p>
+        <p>&copy; 2025 Wiki Mitologias.</p>
+      </div>
+    </footer>
+    <script src="./assets/js/script.js"></script>
+  </body>
 </html>
